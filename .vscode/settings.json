@@ -1,0 +1,43 @@
+
+// Time (ms) to wait after keypress before running enabled linters. Ensures
+// linters are only run when typing has finished and not for every keypress
+
+// advanced: set command line options for some linters:
+{
+    "ruby.lint": {
+        "ruby": {
+            "unicode": true, //Runs ruby -wc -Ku
+            "lintDebounceTime": 500
+        },
+        "rubocop": {
+            "only": ["SpaceInsideBlockBraces", "LeadingCommentSpace"],
+            "lint": true,
+            "rails": true
+        },
+        "reek": true,
+        "fasterer": true,
+        "debride": true,
+        "ruby-lint": true
+    },
+    "debride": {
+        "rails": true //Add some rails call conversions.
+    },
+    
+    "ruby": {},//no settings
+    "reek": {}, //no settings
+    "fasterer": {}, //no settings
+    
+    "ruby-lint": {
+        "levels": [/* a subset of these */ "error","warning","info"],
+        "classes":[ /* a subset of these */ "argument_amount", "loop_keywords", "pedantics", "shadowing_variables", "undefined_methods", "undefined_variables", "unused_variables", "useless_equality_checks" ]
+    },
+    
+    "rubocop": {
+        "lint": true, //Run only lint cops.
+        "only": [/* array: Run only the specified cop(s) and/or cops in the specified departments. */],
+        "except": [/* array: Run all cops enabled by configuration except the specified cop(s) and/or departments. */],
+        "forceExclusion": true, //Add --force-exclusion option
+        "require": [/* array: Require Ruby files. */],
+        "rails": true //Run extra rails cops. Note [this was removed in RuboCop 0.72.0](https://github.com/rubocop-hq/rubocop/issues/5976)
+    }
+}

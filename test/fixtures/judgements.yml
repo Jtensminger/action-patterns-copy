@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  preference: 1.5
+  user: one
+  pairwise_comparison: one
+  decision_space: one
+
+two:
+  preference: 1.5
+  user: two
+  pairwise_comparison: two
+  decision_space: two

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  preference: 1
+  criterium_one_id: 1
+  criterium_two_id: 1
+  goal_id: 1
+  decision_space: one
+  user: one
+  sub_criterium_one_id: 1
+  sub_criterium_two_id: 1
+  alternative_one_id: 1
+  alternative_two_id: 1
+
+two:
+  preference: 1
+  criterium_one_id: 1
+  criterium_two_id: 1
+  goal_id: 1
+  decision_space: two
+  user: two
+  sub_criterium_one_id: 1
+  sub_criterium_two_id: 1
+  alternative_one_id: 1
+  alternative_two_id: 1
